@@ -2,6 +2,7 @@ const express = require('express'); // requiring express
 const app = express(); // using express
 const port = 3000; // initialising port
 const expressLayouts = require('express-ejs-layouts');//importing ejs libaray
+const db = require('./config/mongoose'); // connecting db
 
 app.use(express.static('./assets'));// setting up static files
 
