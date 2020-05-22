@@ -1,0 +1,26 @@
+header{
+    background-color: gray;
+    h1{
+        color:white;
+        text-shadow: 2px 2px black;
+    }
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    ul li{
+        display: inline;
+        padding: 10px;
+        list-style: none;
+        text-decoration: none;
+     
+    }
+    li a{
+        list-style: none;
+        font-size: large;
+        text-decoration: none;
+        color:black;
+        font-size: 30px;
+        text-shadow:  2px 2px gainsboro;
+    }
+}

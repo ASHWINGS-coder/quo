@@ -11,6 +11,16 @@ const passport = require('passport'); // using passport
 const passportLocal = require('./config/passport-local-strategy');
  // importing connect-mongo to store session cookies
 const MongoStore = require('connect-mongo')(session);
+// import saas middle-ware
+const sassMiddleware = require('node-sass-middleware');
+// using saas middle-ware
+app.use(sassMiddleware({
+        src:'./assets/scss',
+        dest:'./assets/css',
+        debug:true,
+        outputStyle:'extended',
+        prefix: '/css'
+}));
 
 app.use(express.urlencoded()); // using url encoded
 app.use(cookieParser()); // using cookie-parser
