@@ -1,7 +1,7 @@
 const express = require('express'); // requiring express
 const cookieParser = require('cookie-parser');// using cookie parser
 const app = express(); // using express
-const port = 3000; // initialising port
+const port = 8000; // initialising port
 const expressLayouts = require('express-ejs-layouts');//importing ejs libaray
 const db = require('./config/mongoose'); // connecting db
 // used for session cookie 
