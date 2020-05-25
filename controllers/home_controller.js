@@ -4,7 +4,15 @@ module.exports.home = function(req,res){
     // console.log(req.cookies)
     // res.cookie('user_id',21)
 
-    Post.find({}).populate('user').exec(function(err,posts){
+    Post.find({})
+    .populate('user')
+    .populate({
+        path:'comments',
+        populate:{
+            path: 'user'
+        }
+    })
+    .exec(function(err,posts){
             return res.render('home',{
                 title:"Yo",
                 posts:posts
