@@ -1,0 +1,16 @@
+#home-container{
+    display: flex;
+    min-height:100%;
+    #feed-posts{
+        width:80%;
+        padding:10px;
+        border-right: 1px solid black ;
+    }
+
+    #user-friends{
+        width: 20%;
+        padding:10px;
+        border-left: 1px solid black ;
+        background-image: linear-gradient(to bottom,rgba(255,0,0,0),rgb(212, 85, 85));
+    }
+}
