@@ -1,5 +1,5 @@
 header{
-    background-color: gray;
+    background-color: rgb(212, 85, 85);
     h1{
         color:white;
         text-shadow: 2px 2px black;
@@ -13,7 +13,6 @@ header{
         padding: 10px;
         list-style: none;
         text-decoration: none;
-     
     }
     li a{
         list-style: none;
@@ -22,5 +21,15 @@ header{
         color:black;
         font-size: 30px;
         text-shadow:  2px 2px gainsboro;
+    }
+    ul li a{
+        padding: 10px;
+    }
+    ul li a:hover{
+        opacity:0.7;
+        font-size: 40px;
+        background-color: rgb(209, 63, 63);
+        color:black;
+        text-shadow:  1px 1px rgb(204, 204, 106);
     }
 }

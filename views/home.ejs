@@ -1,13 +1,9 @@
-<h1>
-    Home / <%= title %>
-</h1>
-
 <section id="feed-posts">
-    <h1>Posts</h1>
+    <h1>Ask Question</h1>
     <% if(locals.user){%>
     <form action="/posts/create" id="new-post-form" method="POST">
         <textarea name="content" id="" cols="30" rows="3" placeholder="TypeHere"></textarea>
-        <input type="submit" value="post">
+        <input type="submit" value="Ask">
     </form>
     <% } %>
     <div id="posts-list-container">
@@ -19,6 +15,18 @@
        
     </div>
 </section>
+
+<section id="user-friends">
+    <h4>
+        Friends
+    </h4>
+    <% for(u of all_users) {%>
+        <p>
+            <a href="/users/profile/<%= u.id %>"><%= u.name %></a>
+        </p>
+    <%}%>
+</section>
+
  
 
 

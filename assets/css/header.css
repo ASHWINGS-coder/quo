@@ -1,5 +1,5 @@
 header {
-  background-color: gray;
+  background-color: #d45555;
   display: flex;
   flex-direction: row;
   justify-content: space-between; }
@@ -18,3 +18,11 @@ header {
     color: black;
     font-size: 30px;
     text-shadow: 2px 2px gainsboro; }
+  header ul li a {
+    padding: 10px; }
+  header ul li a:hover {
+    opacity: 0.7;
+    font-size: 40px;
+    background-color: #d13f3f;
+    color: black;
+    text-shadow: 1px 1px #cccc6a; }

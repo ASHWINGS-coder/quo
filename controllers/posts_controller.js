@@ -14,6 +14,10 @@ module.exports.create = function(req,res){
     })
 }
 
+module.exports.que = function(req,res){
+    return res.render('home')
+}
+
 module.exports.destroy = function(req,res){
     Post.findById(req.params.id,function(err,post){ 
         if(post.user == req.user.id){

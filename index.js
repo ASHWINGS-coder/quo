@@ -1,7 +1,7 @@
 const express = require('express'); // requiring express
 const cookieParser = require('cookie-parser');// using cookie parser
 const app = express(); // using express
-const port = 8000; // initialising port
+const port = 3000; // initialising port
 const expressLayouts = require('express-ejs-layouts');//importing ejs libaray
 const db = require('./config/mongoose'); // connecting db
 // used for session cookie 
@@ -13,6 +13,9 @@ const passportLocal = require('./config/passport-local-strategy');
 const MongoStore = require('connect-mongo')(session);
 // import saas middle-ware
 const sassMiddleware = require('node-sass-middleware');
+// connwct-flash
+const flash = require('connect-flash');
+const customMware = require('./config/middleware');
 // using saas middle-ware
 app.use(sassMiddleware({
         src:'./assets/scss',
@@ -59,6 +62,9 @@ app.use(passport.session());
 
 app.use(passport.setAuthenticatedUser);
 
+// use flash
+app.use(flash());
+app.use(customMware.setFlash)
 // use express router
 app.use('/',require('./routes'));
 
