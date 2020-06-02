@@ -61,7 +61,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 app.use(passport.setAuthenticatedUser);
-
+app.use('/uploads',express.static(__dirname+'/uploads'))
 // use flash
 app.use(flash());
 app.use(customMware.setFlash)
