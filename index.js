@@ -9,6 +9,8 @@ const session = require('express-session'); // using expression session
 const passport = require('passport'); // using passport
 // importing local strategy
 const passportLocal = require('./config/passport-local-strategy');
+// importing passport jwt strategy
+const passportJWT = require('./config/passport-jwt-strategy');
  // importing connect-mongo to store session cookies
 const MongoStore = require('connect-mongo')(session);
 // import saas middle-ware
