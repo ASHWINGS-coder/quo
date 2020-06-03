@@ -3,3 +3,18 @@ body {
   body #layout-main {
     height: auto;
     min-height: 100%; }
+
+#google button a {
+  list-style: none;
+  color: white; }
+
+#google button {
+  list-style: none;
+  color: white;
+  background-color: #d64343;
+  padding: 10px;
+  border-radius: 20px;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+  border-bottom: 1px solid white; }

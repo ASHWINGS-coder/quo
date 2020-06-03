@@ -11,6 +11,8 @@ const passport = require('passport'); // using passport
 const passportLocal = require('./config/passport-local-strategy');
 // importing passport jwt strategy
 const passportJWT = require('./config/passport-jwt-strategy');
+// importing passport google startegy
+const passportGoogle = require('./config/passport-google-oauth2-strategy')
  // importing connect-mongo to store session cookies
 const MongoStore = require('connect-mongo')(session);
 // import saas middle-ware
