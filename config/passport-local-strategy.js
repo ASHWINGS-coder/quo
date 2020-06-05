@@ -5,7 +5,7 @@ const User = require('../models/user'); // import user
 // authentication using passport
 passport.use(new LocalStrategy({
         usernameField:'email',
-        passReqToCallback:true
+        passReqToCallback:true  
     },
     function(req,email,password,done){
         // find user and establish the identity
@@ -34,7 +34,7 @@ passport.serializeUser(function(user,done){
 passport.deserializeUser(function(id,done){
     User.findById(id,function(err,user){
         if(err){
-            console.lof('error in finding user --> passport');
+            console.log('error in finding user --> passport');
             return done(err);
         }
         return done(null,user);
