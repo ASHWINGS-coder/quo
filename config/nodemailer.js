@@ -31,5 +31,6 @@ let renderTemplate = (data,relativePath) => {
 
 module.exports = {
     transporter: transporter,
-    relativePath:renderTemplate
+    renderTemplate:renderTemplate
 }
+//try now ok its delivere d check from the ne you delivered its empty 
