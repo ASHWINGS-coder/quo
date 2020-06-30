@@ -35,6 +35,12 @@
       ${post.content}
         <br>
        <small> ${post.user.name}   </small>
+       <br>
+       <small>
+       <a data-likes="0" href="/likes/toggle/?id=<%= post._id%>&type=Post">
+              0 <i class="far fa-heart"></i>
+            </a>
+       </small>
     </p>
     <div id="post-comments">
        
